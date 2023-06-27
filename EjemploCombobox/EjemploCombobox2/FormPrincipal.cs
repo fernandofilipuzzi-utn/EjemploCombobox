@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EjemploCombobox
+namespace EjemploCombobox2
 {
     public partial class FormPrincipal : Form
     {
@@ -16,16 +16,13 @@ namespace EjemploCombobox
         //no la necesito para esta situación
         RegistroConducir[] registros = new RegistroConducir[100];
         int cant = 0;
-        
-        //el registro seleccionado para modificar
-        RegistroConducir selected = null;
 
         public FormPrincipal()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void FormPrincipal_Load(object sender, EventArgs e)
         {
             #region inicializo el contenedor
             registros[cant++] = new RegistroConducir("Romina", "A");
@@ -40,33 +37,20 @@ namespace EjemploCombobox
             #endregion
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             if (comboBox1.SelectedIndex > -1)
             {
-                //notar que el indice del combobox es congruente con el indice del arreglo
-                selected = registros[comboBox1.SelectedIndex];
+                RegistroConducir selected = registros[comboBox1.SelectedIndex];
 
-                #region muestro la info del registro seleccionada
-                numericUpDown1.Value = selected.Puntos;
-                numericUpDown1.Enabled = true;
-                label1.Text = string.Format("{0} ({1})", selected.Nombre, selected.Categoria);
-                #endregion
+                listBox1.Items.Add(selected.Nombre+"("+selected.Categoria+")");
             }
             else
             {
-                #region muestro la info del registro seleccionada
-                numericUpDown1.Value = 0;
-                numericUpDown1.Enabled = false;
-                label1.Text = "";
-                #endregion
+                MessageBox.Show("seleccione uno!");
             }
         }
 
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
-        {
-            if(selected!=null)
-                selected.Puntos= Convert.ToInt32(numericUpDown1.Value);
-        }
+
     }
 }
