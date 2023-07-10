@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemploCombobox", "EjemploC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemploCombobox2", "EjemploCombobox2\EjemploCombobox2.csproj", "{016FC5E3-DA17-49B6-91C4-6364D8C1A8A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemploDetalleEnModal", "EjemploDetalleEnModal\EjemploDetalleEnModal.csproj", "{FE0980CC-066B-4992-BB00-7DDBC7AF413A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{016FC5E3-DA17-49B6-91C4-6364D8C1A8A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{016FC5E3-DA17-49B6-91C4-6364D8C1A8A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{016FC5E3-DA17-49B6-91C4-6364D8C1A8A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE0980CC-066B-4992-BB00-7DDBC7AF413A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE0980CC-066B-4992-BB00-7DDBC7AF413A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE0980CC-066B-4992-BB00-7DDBC7AF413A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE0980CC-066B-4992-BB00-7DDBC7AF413A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
