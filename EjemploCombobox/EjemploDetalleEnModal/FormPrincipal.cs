@@ -56,9 +56,9 @@ namespace EjemploDetalleEnModal
             if (f2.DialogResult == DialogResult.OK)
             {
                 if (idx > -1)
-                    Text = $"{personas[idx].Nombre}({personas[idx].DNI})";
+                    label1.Text = $"{personas[idx].Nombre}({personas[idx].DNI})";
                 else
-                    Text = "no seleccionado";
+                    label1.Text = "no seleccionado";
             }
 
             f2.Dispose();
